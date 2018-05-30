@@ -1,0 +1,419 @@
+body {
+    font-family: "Helvetica", sans-serif;
+    margin: -1%;
+}
+
+h2 {
+    font-family: "Helvetica", sans-serif;
+    font-size: 25px;
+    text-align: center;
+    font-weight: 100;
+}
+
+h3 {
+    font-family: "Helvetica", sans-serif;
+    font-size: 15px;
+    font-weight: 800;
+    line-height: 24px;
+    margin-top: 5%;
+}
+
+h4 {
+    font-family: "Helvetica", sans-serif;
+    text-align: center;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+p {
+    font-family: "Helvetica", sans-serif;
+    font-size: 17px;
+    text-align: center;
+    font-weight: 100;
+}
+
+/**Side menu**/
+
+/**kode hentet fra: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_sidenav_fixed**/
+
+.sidenav {
+    height: 100%;
+    width: 20%;
+    float: left;
+    justify-content: center;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    overflow-x: hidden;
+    padding-top: 20px;
+    margin-left: 0px;
+    margin-top: -1%;
+}
+
+.sidenav a {
+    margin-top: 26px;
+    margin-left: -1px;
+    line-height: 10px;
+    text-decoration: none;
+    font-family: "Helvetica", sans-serif;
+    font-size: 15px;
+    color: #818181;
+    display: block;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+
+#logo {
+    margin: -1px -1px 0px 0px;
+
+}
+
+.ikoner {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.content {
+    width: 80%;
+    float: right;
+}
+
+/* Slideshow container */
+
+.slideshow-container {
+    width: 100%;
+    position: relative;
+    margin-top: -1%
+}
+
+/**Slideshow**/
+
+/**kode der er hentet fra: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_slideshow_auto**/
+
+* {
+    box-sizing: border-box;
+}
+
+.mySlides {
+    display: none;
+}
+
+#slide {
+    width: 100%;
+}
+
+.main {
+    width: 100%;
+    /* Same as the width of the sidenav */
+    font-size: 28px;
+    /* Increased text to enable scrolling */
+    line-height: 25px;
+    background-color: #ede9e8;
+    padding: 3% 15%;
+    margin: -1% 0% -1% 0%;
+}
+
+/**Detalje - krydser. Det er til kryder der er på forsiden.**/
+
+/**Kode fra w3school: https://www.w3schools.com/css/tryit.asp?filename=trycss_image_gallery**/
+
+.galleri {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    background-color: #ede9e8;
+    margin-top: -1%;
+}
+
+div.gallery {
+    margin: 25px;
+    padding: 20px;
+    float: right;
+    width: 20%;
+}
+
+div.gallery img {
+    width: 50%;
+    margin-left: 22%;
+    height: auto;
+}
+
+div.desc {
+    font-family: "Helvetica", sans-serif;
+    line-height: 30px;
+    padding: 15px;
+    text-align: center;
+}
+
+p {
+    text-align: center;
+    font-size: 13px;
+    font-weight: 100;
+  
+    margin-top: 30px;
+}
+
+
+.video {
+    width: 100%;
+    margin-right: -1%;
+}
+
+/**Image gallery - forsiden.**/
+
+/**Kode fra: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_tab_img_gallery**/
+
+/* The grid: Four equal columns that floats next to each other */
+
+.row {
+    display: -webkit-flex;
+    display: flex;
+    width: 100%;
+    float: left;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    margin-bottom: -0.9%;
+}
+
+.column {
+    width: 25%;
+}
+
+/* Style the images inside the grid */
+
+.column img {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.column img:hover {
+    opacity: 1;
+}
+
+/**Image Gallery smykker**/
+
+/**Kode fra: https://codepen.io/littlesnippets/pen/bpmmNB**/
+
+/**Koden herunder er stylingen til det galleri der er under smykker.**/
+
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display);
+@import url(https://fonts.googleapis.com/css?family=Fauna+One);
+.snip1482 {
+    font-family: "Helvetica", sans-serif;
+    position: relative;
+    float: left;
+    margin: 5% 3.5%;
+    min-width: 280px;
+    max-width: 300px;
+    min-height: 220px;
+    width: 100%;
+    color: gray;
+    text-align: right;
+    line-height: 1.4em;
+    background-color: white;
+    font-size: 16px;
+  
+}
+
+.snip1482 * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all 0.35s ease;
+    transition: all 0.35s ease;
+}
+
+.snip1482 img {
+    position: absolute;
+    right: 0%;
+    top: 60%;
+    opacity: 1;
+    width: 100%;
+    -webkit-transform: translate(0%, -50%);
+    transform: translate(0%, -50%);
+}
+
+.snip1482 figcaption {
+    position: absolute;
+    width: 50%;
+    top: 50%;
+    left: 0;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    padding: 20px 0 20px 20px;
+}
+
+.snip1482 h2,
+.snip1482 p {
+    margin: 0;
+    width: 100%;
+    -webkit-transform: translateX(20px);
+    transform: translateX(20px);
+    opacity: 0;
+}
+
+.snip1482 h2 {
+    font-family: "Helvetica", sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.snip1482 p {
+    font-size: 0.8em;
+}
+
+.snip1482 a {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.snip1482:hover img,
+.snip1482.hover img {
+    width: 55%;
+    right: -10%;
+}
+
+.snip1482:hover figcaption h2,
+.snip1482.hover figcaption h2,
+.snip1482:hover figcaption p,
+.snip1482.hover figcaption p {
+    -webkit-transform: translateX(0px);
+    transform: translateX(0px);
+    opacity: 1;
+}
+
+/**Content til mere-sider**/
+
+.billedermere {
+    float: left;
+    width: 45%;
+    padding: 10% 0% 5% 7%;
+}
+
+.tekstmere {
+    float: right;
+    width: 50%;
+    padding: 11% 8% 0% 2%;
+}
+
+/**FOOTER**/
+
+/**Herunder ses styling til footeren. Den er lavet......**/
+
+.footer {
+    display: flex;
+    width: 100%;
+    /* Same as the width of the sidenav */
+    font-size: 28px;
+    /* Increased text to enable scrolling */
+    justify-content: center;
+}
+
+
+div.footer2 {
+    margin: 2%;
+    float: left;
+    width: 180px;
+}
+
+div.ftext {
+    font-family: "Helvetica", sans-serif;
+    text-align: left;
+    font-size: 13px;
+    font-weight: 100;
+    line-height: 20px;
+    margin-top: 30px;
+    color: white;
+    height: 100%;
+}
+
+div.copy {
+    margin-top: -1%;
+    margin-left: 55%;
+    font-size: 13px;
+    color: white;
+}
+
+.copyright {
+    font-family: "Helvetica", sans-serif;
+    text-align: left;
+    font-size: 13px;
+    font-weight: 100;
+    line-height: 20px;
+    margin-top: 30px;
+    color: white;
+    margin-top: 50px
+}
+
+/* On smaller screens, decrease text size */
+
+@media only screen and (max-width: 420px) {
+    body {margin: 0%;}
+    .text {
+        font-size: 11px;
+    }
+    .sidenav {
+        width: 100%;
+        height: auto;
+        position: absolute;
+    }
+    .content {
+        width: 100%;
+        margin-top: 350px;
+    }
+
+    .column {
+        width: 50%;
+    }
+
+    #logo {
+        margin-top: -10%;
+        width: 35%;
+    }
+    .ikoner {
+        display: none;
+    }
+
+    div.gallery {
+        width: 50%;
+    }
+
+        
+    p {
+        font-size: 16px;
+    }
+
+    .billedermere {
+        display: flex;
+        padding: 0%;
+        margin-top: 7%;
+        width: 50%;
+        height: 200px;
+        float: left;
+    }
+
+   
+    .tekstmere {
+        padding: 0%;
+        width: 100%;
+}
+    
+    .snip1482 {
+        margin: 10% 15% 12% 12%;
+    }
+    
+    .footer {padding: 1%;}
+}

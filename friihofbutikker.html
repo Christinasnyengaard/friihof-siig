@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8' />
+   <title>FRIIHOF+SIIG</title>
+    <link rel="icon" href="IMG/friihoflogo%20copy.png">
+    
+     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+     <meta name="description" content="FRIIHOF+SIIG er for dig der gerne vil eje et unikt smykke. De får hele tiden nye idéer til designs og henter inspiration og køber perler hjem, når de er ude at rejse. De udvælger nøje perler fra Thailand, som der kun findes et begrænset antal af.
+"/>
+    <meta name="keywords" content="smykker,armbånd, friihof+siig, unika, håndlavet, dansk"/>
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.45.0/mapbox-gl.js'></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="friihof.css">
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.45.0/mapbox-gl.css' rel='stylesheet' />
+
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        #map {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+
+</head>
+
+
+<style>
+    #map {
+        position: fixed;
+        width: 40%;
+        margin-left: 20%;
+    }
+
+    #features {
+        width: 40%;
+        margin-left: 60%;
+        font-family: sans-serif;
+        overflow-y: scroll;
+        background-color: #fafafa;
+    }
+
+    section {
+        padding: 25px 50px;
+        line-height: 25px;
+        border-bottom: 1px solid #ede9e8;
+        opacity: 0.25;
+        font-size: 13px;
+    }
+
+    section.active {
+        opacity: 1;
+    }
+
+    section:last-child {
+        border-bottom: none;
+        margin-bottom: 0px;
+    }
+    
+    
+    @media only screen and (max-width: 420px){
+        
+     #map {
+     display: none;
+
+    }
+    
+    #features{
+        width: 420px;
+        margin-left: 1%;
+        margin-top: 90%; 
+        
+    }
+
+     section {
+        padding: 10px 10px;
+        width: 100%;   
+    }    
+    
+          
+</style>
+
+
+
+
+<body>
+
+    <center>
+         <div class="sidenav">
+          <a href="friihof.html"><img src="IMG/friihoflogo.png" alt="friihof+siig" id="logo" width="90%"></a>
+            <a href="friihof.html">HJEM</a>
+            <a href="friihof.html#FRIIHOF+SIIG">OM FRIIHOF+SIIG</a>
+            <a href="friihofsmykker.html">SMYKKER</a>
+            <a href="friihofbutikker.html">FORHANDLERE</a>
+            <a href="friihof.html#agenter">KONTAKT</a>
+            <br>
+            <div class="ikoner">
+                <div><a href="https://www.facebook.com/Friihof/"><i class="fa fa-facebook-square" style="font-size:30px;color: #ebdcd8" id="fblogo"></i></a></div>
+                <div><a href="https://www.instagram.com/friihofsiig/"><i class="fa fa-instagram" style="font-size:30px;color: #ebdcd8;" id="instalogo" ></i></a></div>
+            </div>
+        </div>
+    </center>
+
+
+
+    <div id='map'></div>
+    <div id='features'>
+        <section id='baker' class='active'>
+            <h3>AARHUS</h3>
+            <p><b>Bahne</b><br> M. P. Bruuns Gade 25, 8000 Aarhus<br> 38 40 50 11
+            </p>
+        </section>
+        <section id='aldgate'>
+            <h3>AARHUS</h3>
+            <p><b>Bella Moda sko</b><br> Sankt Clemens Stræde 7, 8000 Aarhus<br> 27 13 86 22
+            </p>
+        </section>
+        <section id='london-bridge'>
+            <h3>AARHUS</h3>
+            <p><b>Decorate</b> <br> Norsgade 1 <br> 41 90 89 01
+            </p>
+        </section>
+        <section id='woolwich'>
+            <h3>AARHUS</h3>
+            <p><b>Decorate</b> <br> Jægergårdsgade 100 <br> 41 90 89 02
+
+
+            </p>
+        </section>
+        <section id='gloucester'>
+            <h3>AARHUS</h3>
+            <p><b>Nielsens</b> <br> Stor center nord <br> Finlandsgade 17, 8200 Aarhus<br> 63109957
+            </p>
+        </section>
+        <section id='caulfield-gardens'>
+            <h3>AARHUS</h3>
+            <p>Fru paludan (trige)<br> Randersvej 502, 8380 Trige<br> 30 48 49 76
+            </p>
+        </section>
+        <section id='telegraph'>
+            <h3>RISSKOV</h3>
+            <p><b>Clara H</b> <br> Nordre Strandvej 28, 8240 Risskov <br> 86 17 70 75 .
+            </p>
+        </section>
+        <section id='charing-cross'>
+            <h3>RISSKOV</h3>
+            <p><b>Ønsketing</b><br> Frijsenborgvej 5, 8240 Risskov<br> 86 21 47 11
+            </p>
+        </section>
+    </div>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+
+    <script>
+        mapboxgl.accessToken = 'pk.eyJ1Ijoic2lkc2VsdyIsImEiOiJjamZqY3kxMjI1cWloMnJudjVxNHFvMG80In0.MKO7TTOKlXb7zTOzp-qhVg';
+
+
+        var map = new mapboxgl.Map({
+            container: 'map',
+            style: 'mapbox://styles/sidselw/cjhaa4i1f0u8y2sqrtvpyp8i3',
+            center: [10.203878, 56.149200],
+            zoom: 16.5,
+            bearing: 27,
+            pitch: 45
+
+        });
+
+        var chapters = {
+            'baker': {
+                bearing: 27,
+                center: [10.203878, 56.149200],
+                zoom: 15.5,
+                pitch: 20
+            },
+            'aldgate': {
+                duration: 6000,
+                center: [10.208137, 56.156781],
+                bearing: 150,
+                zoom: 17,
+                pitch: 0
+            },
+            'london-bridge': {
+                bearing: 90,
+                center: [10.207705, 56.160424],
+                zoom: 17,
+                speed: 0.6,
+                pitch: 40
+            },
+            'woolwich': {
+                bearing: 90,
+                center: [10.204191, 56.148304],
+                zoom: 17.3
+            },
+            'gloucester': {
+                bearing: 45,
+                center: [10.189592, 56.170233],
+                zoom: 17.3,
+                pitch: 20,
+                speed: 0.5
+            },
+            'caulfield-gardens': {
+                bearing: 180,
+                center: [10.159866, 56.238714],
+                zoom: 17.3
+            },
+            'telegraph': {
+                bearing: 90,
+                center: [10.242423, 56.192501],
+                zoom: 17.3,
+                pitch: 40
+            },
+            'charing-cross': {
+                bearing: 90,
+                center: [10.214580, 56.189282],
+                zoom: 17.3,
+                pitch: 20
+            }
+        };
+
+        // On every scroll event, check which element is on screen
+        window.onscroll = function() {
+            var chapterNames = Object.keys(chapters);
+            for (var i = 0; i < chapterNames.length; i++) {
+                var chapterName = chapterNames[i];
+                if (isElementOnScreen(chapterName)) {
+                    setActiveChapter(chapterName);
+                    break;
+                }
+            }
+        };
+
+        var activeChapterName = 'baker';
+
+        function setActiveChapter(chapterName) {
+            if (chapterName === activeChapterName) return;
+
+            map.flyTo(chapters[chapterName]);
+
+            document.getElementById(chapterName).setAttribute('class', 'active');
+            document.getElementById(activeChapterName).setAttribute('class', '');
+
+            activeChapterName = chapterName;
+        }
+
+        function isElementOnScreen(id) {
+            var element = document.getElementById(id);
+            var bounds = element.getBoundingClientRect();
+            return bounds.top < window.innerHeight && bounds.bottom > 0;
+        }
+    </script>
+
+
+</body>
+</html>
+
